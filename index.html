@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="titulo">
+    <img src="imagens/titulo.png" alt="titulo">
+    </div>
+    <div id="bart">
+        <img src="imagens/bart1.png" alt="bart">
+    </div>
+    <div id="homer">
+        <img src="imagens/homer1.png" alt="homer">
+    </div>
+    <div id="formulario">
+    <form action="">
+        <p>Jogar contra o Computador:</p>
+        <label for="sim">SIM</label>
+        <input type="radio" id="cpu" name="cpu">
+
+        <label for="nao">NAO</label>
+        <input type="radio" id="cpu" name="cpu" checked>
+    </form>
+    </div>
+    <div id="velha">
+        <img src="imagens/velha.png" alt="jogoDaVelha">
+    </div>
+    <div id="jogo">
+    <table width="300" border="0">
+        <tbody>
+            <tr>
+                <td><img src="imagens/transp.png" alt="imagem" id="c1" onclick="return joguinhoksks(this.id)"/></td>
+                <td><img src="imagens/transp.png" alt="imagem" id="c2" onclick="return joguinhoksks(this.id)"/></td>
+                <td><img src="imagens/transp.png" alt="imagem" id="c3" onclick="return joguinhoksks(this.id)"/></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/transp.png" alt="imagem" id="c4" onclick="return joguinhoksks(this.id)"/></td>
+                <td><img src="imagens/transp.png" alt="imagem" id="c5" onclick="return joguinhoksks(this.id)"/></td>
+                <td><img src="imagens/transp.png" alt="imagem" id="c6" onclick="return joguinhoksks(this.id)"/></td>
+            </tr>
+            <tr>
+                <td><img src="imagens/transp.png" alt="imagem" id="c7" onclick="return joguinhoksks(this.id)"/></td>
+                <td><img src="imagens/transp.png" alt="imagem" id="c8" onclick="return joguinhoksks(this.id)"/></td>
+                <td><img src="imagens/transp.png" alt="imagem" id="c9" onclick="return joguinhoksks(this.id)"/></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2 id="modalMessage">Fim de Jogo</h2>
+            <img id="modalImage" src="" alt="Imagem de Vitória">
+        </div>
+    </div>
+
+    <audio id="homervitoria" src="audio/homervitoria.mp3" preload="auto"></audio>
+    <audio id="bartvitoria" src="audio/bartvitoria.mp3" preload="auto"></audio>
+    <audio id="drawAudio" src="audio/draw.mp3" preload="auto"></audio>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
